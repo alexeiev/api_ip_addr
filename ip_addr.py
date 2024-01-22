@@ -37,4 +37,7 @@ def ip_info(ip_addr):
         msg = f"IP: {output['ip']}\nCity: {output['city']}\nRegion: {output['region']}\nCountry: {output['country_name']}"
     return msg
 
-print(ip_info(ip_addr))
+try:
+    print(ip_info(ip_addr))
+except:
+    print("[ERROR] - Wait a few minutes for a new query")
